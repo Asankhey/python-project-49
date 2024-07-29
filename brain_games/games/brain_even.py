@@ -12,7 +12,7 @@ def main():
     while index < score:
         randon_number = randint(1, 100)
         print(f"Question: {randon_number}")
-        answer = prompt. string("Your answer: ")
+        answer = prompt.string("Your answer: ")
         if answer == 'yes' and randon_number % 2 == 0 or answer == 'no' and randon_number % 2 > 0:
             print('Correct!')
             index += 1
