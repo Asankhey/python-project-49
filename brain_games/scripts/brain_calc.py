@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
 import prompt
-from random import randint
-import random
+from random import randint, choice
 
+def calculate(num1, num2, oper):
+    if oper == '+':
+        return num1 + num2
+    elif oper == '-':
+        return num1 - num2
+    elif oper == '*':
+        return num1 * num2
 
 def main():
     print("Welcome to the Brain Games!")
@@ -13,20 +19,17 @@ def main():
     while index < score:
         number1 = randint(1, 10)
         number2 = randint(1, 10)
-        operations = ['+', '-', '*']
-        oper = random.choice(operations)
-        solution = f"{number1} {oper} {number2}"
-        result = eval(solution)
-        print(f"Question: {solution}")
+        oper = choice(['+', '-', '*'])
+        result = calculate(number1, number2, oper)
+        print(f"Question: {number1} {oper} {number2}")
         answer = prompt.string("Your answer: ")
-        if int(answer) == result:
+        if answer.isdigit() and int(answer) == result:
             print('Correct!')
             index += 1
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was {result}")
             return
     print(f"Congratulations, {user_name}!")
-
 
 if __name__ == '__main__':
     main()
