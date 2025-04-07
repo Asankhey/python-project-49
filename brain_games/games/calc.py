@@ -2,6 +2,7 @@
 import prompt
 from random import randint, choice
 
+
 def calculate(num1, num2, oper):
     if oper == '+':
         return num1 + num2
@@ -10,10 +11,11 @@ def calculate(num1, num2, oper):
     elif oper == '*':
         return num1 * num2
 
+
 def main():
     print("Welcome to the Brain Games!")
     user_name = prompt.string("May I have your name? ")
-    print(f"Hello {user_name}! \nWhat is the result of the expression?")
+    print(f"Hello {user_name}!\nWhat is the result of the expression?")
     index = 0
     score = 3
     while index < score:
@@ -27,9 +29,11 @@ def main():
             print('Correct!')
             index += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was {result}")
+            print(f"'{answer}' is wrong answer ;(."
+                  f" Correct answer was {result}")
             return
     print(f"Congratulations, {user_name}!")
+
 
 if __name__ == '__main__':
     main()

@@ -20,7 +20,8 @@ def main():
             print('Correct!')
             index += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was {gcd}")
+            print(f"'{answer}' is wrong answer ;(."
+                  f" Correct answer was {gcd}")
             return
     print(f"Congratulations, {user_name}!")
 
