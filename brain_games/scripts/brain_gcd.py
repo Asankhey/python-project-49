@@ -7,7 +7,7 @@ import math
 def main():
     print("Welcome to the Brain Games!")
     user_name = prompt.string('May I have your name? ')
-    print(f"Hello {user_name}!\nFind the greatest common divisor of given numbers.")
+    print(f"Hello, {user_name}!\nFind the greatest common divisor of given numbers.")
     index = 0
     score = 3
     while index < score:
@@ -21,6 +21,7 @@ def main():
             index += 1
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was {gcd}")
+            print(f"Let's try again, {user_name}!")
             return
     print(f"Congratulations, {user_name}!")
 
