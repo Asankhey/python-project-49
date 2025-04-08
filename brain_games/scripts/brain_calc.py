@@ -15,7 +15,7 @@ def calculate(num1, num2, oper):
 def main():
     print("Welcome to the Brain Games!")
     user_name = prompt.string("May I have your name? ")
-    print(f"Hello {user_name}! \nWhat is the result of the expression?")
+    print(f"Hello, {user_name}! \nWhat is the result of the expression?")
     index = 0
     score = 3
     while index < score:
