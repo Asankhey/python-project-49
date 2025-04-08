@@ -2,6 +2,7 @@
 import prompt
 from random import randint, choice
 
+
 def calculate(num1, num2, oper):
     if oper == '+':
         return num1 + num2
@@ -9,6 +10,7 @@ def calculate(num1, num2, oper):
         return num1 - num2
     elif oper == '*':
         return num1 * num2
+
 
 def main():
     print("Welcome to the Brain Games!")
@@ -30,6 +32,7 @@ def main():
             print(f"'{answer}' is wrong answer ;(. Correct answer was {result}")
             return
     print(f"Congratulations, {user_name}!")
+
 
 if __name__ == '__main__':
     main()
