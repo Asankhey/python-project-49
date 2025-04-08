@@ -25,7 +25,8 @@ def main():
         result = calculate(number1, number2, oper)
         print(f"Question: {number1} {oper} {number2}")
         answer = prompt.string("Your answer: ")
-        if answer.isdigit() and int(answer) == result:
+        # Корректная проверка с поддержкой отрицательных чисел
+        if answer.lstrip('-').isdigit() and int(answer) == result:
             print('Correct!')
             index += 1
         else:
