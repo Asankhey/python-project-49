@@ -6,7 +6,7 @@ from random import randint
 def main():
     print("Welcome to the Brain Games!")
     user_name = prompt.string("May I have your name? ")
-    print(f"Hello, {user_name}! \nAnswer 'yes' if the number is even, otherwise answer 'no'.")
+    print(f'Hello, {user_name}! \nAnswer "yes" if the number is even, otherwise answer "no".')
     index = 0
     score = 3
     while index < score:
