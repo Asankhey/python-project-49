@@ -1,6 +1,6 @@
 from random import randint, choice
 
-DESCRIPTION = "What is the result of the expression?"
+RULE = "What is the result of the expression?"
 
 
 def calculate(num1, num2, oper):

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from random import randint
 
-DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
+RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def generate_round():

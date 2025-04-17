@@ -3,6 +3,7 @@ import prompt
 
 ATTEMPTS_COUNT = 3
 
+
 def run_game(game):
     name = cli.welcome_user()
     print(game.RULE)
