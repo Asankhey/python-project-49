@@ -6,4 +6,3 @@
 ### Demo:
 
 [![asciicast demo1](https://asciinema.org/a/Q6ccqjUOVoNQklq1gsIub1PdT.svg)](https://asciinema.org/a/Q6ccqjUOVoNQklq1gsIub1PdT)
-[![asciicast demo2](https://asciinema.org/a/a88a2cdd-decc-464c-a2fc-1852562ad75d.svg)](https://asciinema.org/a/a88a2cdd-decc-464c-a2fc-1852562ad75d)
