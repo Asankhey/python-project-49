@@ -1,6 +1,9 @@
-.venv
-dist/
-__pycache__/.venv 
-dist/
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+dist/
+build/
+poetry.lock
 .DS_Store
