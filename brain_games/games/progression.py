@@ -9,7 +9,7 @@ def generate_progression(start, step, length):
     return [str(start + step * i) for i in range(length)]
 
 
-def generate_round():
+def get_question_answer():
     start = randint(1, 10)
     step = randint(1, 5)
     length = 10

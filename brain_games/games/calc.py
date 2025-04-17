@@ -12,7 +12,7 @@ def calculate(num1, num2, oper):
         return num1 * num2
 
 
-def generate_round():
+def get_question_answer():
     number1 = randint(1, 10)
     number2 = randint(1, 10)
     oper = choice(['+', '-', '*'])
