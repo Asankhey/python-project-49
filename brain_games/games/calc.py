@@ -1,21 +1,22 @@
-from random import randint, choice
+import random
+import operator
 
-RULE = "What is the result of the expression?"
+MIN_NUMBER = 1
+MAX_NUMBER = 20
+RULE = 'What is the result of the expression?'
+
+OPERATORS = {
+    '+': operator.add,
+    '-': operator.sub,
+    '*': operator.mul,
+}
 
 
-def calculate(num1, num2, oper):
-    if oper == '+':
-        return num1 + num2
-    elif oper == '-':
-        return num1 - num2
-    elif oper == '*':
-        return num1 * num2
-
-
-def get_question_answer():
-    number1 = randint(1, 10)
-    number2 = randint(1, 10)
-    oper = choice(['+', '-', '*'])
-    question = f"{number1} {oper} {number2}"
-    correct_answer = str(calculate(number1, number2, oper))
+def get_question_and_answer():
+    number1 = random.randint(MIN_NUMBER, MAX_NUMBER)
+    number2 = random.randint(MIN_NUMBER, MAX_NUMBER)
+    operator_sign = random.choice(list(OPERATORS.keys()))
+    question = f'{number1} {operator_sign} {number2}'
+    result = OPERATORS[operator_sign](number1, number2)
+    correct_answer = str(result)
     return question, correct_answer
